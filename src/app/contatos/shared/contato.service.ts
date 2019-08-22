@@ -30,7 +30,8 @@ export class ContatoService {
     );
   }
 
-  delete(contato: Contato) {
-    this.db.object('contato/${key}').remove();
+  delete(key: string) {
+    console.log(key);
+    this.db.object(key).remove();
   }
 }
