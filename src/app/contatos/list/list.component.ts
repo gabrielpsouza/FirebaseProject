@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from "rxjs";
-import { Contato } from "../shared/contato";
-import { ContatoService } from "../shared/contato.service";
-import { ContatoDataService } from "../shared/contato-data.service";
+import { Contato } from "../service/contato";
+import { ContatoService } from "../service/contato.service";
+import { ContatoDataService } from "../service/contato-data.service";
 
 @Component({
   selector: 'app-list',
