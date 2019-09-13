@@ -1,0 +1,46 @@
+MASK
+
+Install
+npm install jquery --save
+npm install inputmask --save
+
+Input 
+data-inputmask="'mask': '(99) 9 9999-9999'"
+
+
+TS
+import * as Inputmask from "inputmask";
+
+
+ngOnInit()
+Inputmask().mask(document.querySelectorAll("input"));
+
+MASK MONETARIO
+
+Install
+
+npm i ng2-currency-mask
+
+npm install ng2-currency-mask --save
+
+Import the module
+import { CurrencyMaskModule } from "ng2-currency-mask";
+@NgModule({
+    imports: [
+        ...
+        CurrencyMaskModule
+    ],
+
+HTML
+<input currencyMask [(ngModel)]="value" />
+
+URL
+https://www.npmjs.com/package/ng2-currency-mask
+
+__________________________________________________________________________________________
+Mask Comissão
+
+
+
+currencyMask [options]="{ prefix: '', thousands: '.', decimal: ',', suffix: '%', align: 'left' }"
+
